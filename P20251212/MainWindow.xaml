@@ -21,5 +21,6 @@
         </Grid.RowDefinitions>
         <Label Grid.Row="1" Grid.Column="1" Content="Autószerviz" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
         <Image Source="C:\Users\user\Documents\Takács Imre\P20251212\P20251212\bin\polski.png" Grid.Row="2" Grid.Column="1" Height="200" Width="200"/>
+        <Button Content="Bejelentkezés" x:Name="btnLogin" Grid.Column="1" Grid.Row="3" Width="100" Height="60"/>
     </Grid>
 </Window>
