@@ -32,17 +32,17 @@ namespace P20251212
         private void btnIn_Click(object sender, RoutedEventArgs e)
         {
             felhasznalo = fNev.Text;
-            jelszo = fPass.Password;
-            jelszo2 = fPass2.Password;
+            jelszo = fPassw.Password;
+            jelszo2 = fPassw2.Password;
             MessageBox.Show("Az új jelszó és a felhasználó sikeresen mentve");
             this.Close();
-            FileStream f = new FileStream("adat.txt", FileMode.Create);
-            StreamWriter iras = new StreamWriter(f);
+            FileStream fs = new FileStream("adat.txt", FileMode.Create);
+            StreamWriter iras = new StreamWriter(fs);
             iras.WriteLine(fNev);
-            iras.WriteLine(fPass);
-            iras.WriteLine(fPass2);
+            iras.WriteLine(fPassw);
+            iras.WriteLine(fPassw2);
             iras.Close();
-            f.Close();
+            fs.Close();
         }
     }
 }
