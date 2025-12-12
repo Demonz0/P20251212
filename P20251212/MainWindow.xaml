@@ -14,11 +14,12 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="10"/>
-            <RowDefinition/>
+            <RowDefinition Height="40"/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
-        <Label Content="Bejelentkezés" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="1" Content="Autószerviz" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+        <Image Source="C:\Users\user\Documents\Takács Imre\P20251212\P20251212\bin\polski.png" Grid.Row="2" Grid.Column="1" Height="200" Width="200"/>
     </Grid>
 </Window>
