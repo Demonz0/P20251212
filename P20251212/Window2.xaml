@@ -30,6 +30,5 @@
         <PasswordBox x:Name="fPass" Grid.Row="3" Grid.Column="2" Height="50" Width="125" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <PasswordBox x:Name="fPass2" Grid.Row="4" Grid.Column="2" Height="50" Width="125" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button x:Name="btnIn" Content="Új felhasználó létrehozása" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Height="60" Width="160" HorizontalAlignment="Center" Click="btnIn_Click"/>
-        <Button/>
     </Grid>
 </Window>
