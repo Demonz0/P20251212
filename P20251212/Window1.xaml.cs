@@ -38,5 +38,11 @@ namespace P20251212
                 MessageBox.Show("Téves jelszó vagy felhasználónév!");
             }
         }
+
+        private void ePass_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 newin = new Window2();
+            newin.Show();
+        }
     }
 }
