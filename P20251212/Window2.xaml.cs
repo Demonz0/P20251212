@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
@@ -12,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace P20251212
 {
@@ -33,6 +35,13 @@ namespace P20251212
             felhasznalo = fNev.Text;
             jelszo = fPass.Password;
             jelszo2 = fPass2.Password;
+            FileStream f = new FileStream("adat.txt", FileMode.Create);
+            StreamWriter iras = new StreamWriter(f);
+            iras.WriteLine(felhasznalo);
+            iras.WriteLine(jelszo);
+            iras.WriteLine(jelszo2);
+            iras.Close();
+            f.Close();
         }
     }
 }
