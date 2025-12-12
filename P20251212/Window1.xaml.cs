@@ -20,7 +20,7 @@ namespace P20251212
     public partial class Window1 : Window
     {
         const string jelszo = "Premo900";
-        const string felhasznalo = "Admin";
+        const string felhasznalo = "info";
         public Window1()
         {
             InitializeComponent();
@@ -31,6 +31,11 @@ namespace P20251212
             if (fNev.Text ==  felhasznalo && jelszo == fPass.Password) 
             {
                 MessageBox.Show("Sikeres bejelentkezés!");
+
+            }
+            else
+            {
+                MessageBox.Show("Téves jelszó vagy felhasználónév!");
             }
         }
     }
